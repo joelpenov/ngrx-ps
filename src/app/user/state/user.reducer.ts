@@ -11,8 +11,14 @@ const initialState:UserState = {
 export const usersReducer = createReducer<UserState>(initialState,
     on(UserActions.Login, (state, {username}):UserState => {
         return { 
+            ...state,
             currentUsername: username,
-            ...state
+        }
+    }),
+    on(UserActions.MaskUsername, (state)=>{
+        return {
+            ...state,
+            maskUsername: !state.maskUsername
         }
     })
 

@@ -12,7 +12,6 @@ const productInitialState:ProductState = {
 export const productReducer = createReducer<ProductState>(
     productInitialState,
     on(ProductActions.ToggleCodeVisibility, (state):ProductState =>{
-        console.log(state)
         return {
             ...state,
             showProductCode: !state.showProductCode,

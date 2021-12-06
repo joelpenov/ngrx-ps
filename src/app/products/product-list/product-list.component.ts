@@ -38,8 +38,8 @@ export class ProductListComponent implements OnInit, OnDestroy {
       error: err => this.errorMessage = err
     });
 
-    this.store.select(showProductCode).subscribe(state=>{
-        this.displayCode = state;
+    this.store.select(showProductCode).subscribe(showProductCode=>{
+        this.displayCode = showProductCode;
     });
   }
 
