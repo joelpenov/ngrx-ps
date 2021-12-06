@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var FeatureTypes = /*#__PURE__*/(() => {\n  (function (FeatureTypes) {\n    FeatureTypes[\"Products\"] = \"products\";\n    FeatureTypes[\"Users\"] = \"users\";\n  })(FeatureTypes || (FeatureTypes = {}));\n\n  return FeatureTypes;\n})();","map":null,"metadata":{},"sourceType":"module"}
